@@ -1,0 +1,364 @@
+$date
+	Mon Jun 02 18:02:11 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_karatsuba_recursive $end
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 32 " x [31:0] $end
+$var wire 32 # y [31:0] $end
+$var parameter 32 $ NUM_LATENCY $end
+$var parameter 32 % base_mult $end
+$var parameter 32 & num_bits $end
+$var parameter 32 ' num_blocks $end
+$var reg 64 ( a [63:0] $end
+$var reg 1 ) accumulation_done $end
+$var reg 64 * b [63:0] $end
+$var reg 32 + out [31:0] $end
+$var reg 32 , out_idx [31:0] $end
+$var reg 129 - outf [128:0] $end
+$var integer 32 . count [31:0] $end
+$scope begin recurse $end
+$var wire 32 / x0 [31:0] $end
+$var wire 32 0 x1 [31:0] $end
+$var wire 32 1 y0 [31:0] $end
+$var wire 32 2 y1 [31:0] $end
+$var wire 33 3 y0_ext [32:0] $end
+$var wire 33 4 x0_ext [32:0] $end
+$var wire 33 5 sum_y [32:0] $end
+$var wire 33 6 sum_x [32:0] $end
+$var wire 66 7 out_p3 [65:0] $end
+$var wire 64 8 out_p2 [63:0] $end
+$var wire 64 9 out_p1 [63:0] $end
+$var parameter 32 : fh $end
+$var parameter 33 ; sh $end
+$var reg 66 < middle [65:0] $end
+$var reg 64 = out_p1_reg [63:0] $end
+$var reg 64 > out_p2_reg [63:0] $end
+$var reg 66 ? out_p3_reg [65:0] $end
+$var reg 66 @ p1_ext [65:0] $end
+$var reg 66 A p2_ext [65:0] $end
+$scope module p1 $end
+$var wire 1 B clk $end
+$var wire 32 C x [31:0] $end
+$var wire 32 D y [31:0] $end
+$var parameter 32 E NUM_LATENCY $end
+$var parameter 32 F base_mult $end
+$var parameter 32 G num_bits $end
+$var parameter 32 H num_blocks $end
+$var reg 32 I a [31:0] $end
+$var reg 1 J accumulation_done $end
+$var reg 32 K b [31:0] $end
+$var reg 32 L out [31:0] $end
+$var reg 32 M out_idx [31:0] $end
+$var reg 65 N outf [64:0] $end
+$var integer 32 O count [31:0] $end
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+$scope module p2 $end
+$var wire 1 P clk $end
+$var wire 32 Q x [31:0] $end
+$var wire 32 R y [31:0] $end
+$var parameter 32 S NUM_LATENCY $end
+$var parameter 32 T base_mult $end
+$var parameter 33 U num_bits $end
+$var parameter 33 V num_blocks $end
+$var reg 32 W a [31:0] $end
+$var reg 1 X accumulation_done $end
+$var reg 32 Y b [31:0] $end
+$var reg 32 Z out [31:0] $end
+$var reg 32 [ out_idx [31:0] $end
+$var reg 65 \ outf [64:0] $end
+$var integer 32 ] count [31:0] $end
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+$scope module p3 $end
+$var wire 1 ^ clk $end
+$var wire 32 _ x [31:0] $end
+$var wire 32 ` y [31:0] $end
+$var parameter 32 a NUM_LATENCY $end
+$var parameter 32 b base_mult $end
+$var parameter 34 c num_bits $end
+$var parameter 34 d num_blocks $end
+$var reg 33 e a [32:0] $end
+$var reg 1 f accumulation_done $end
+$var reg 33 g b [32:0] $end
+$var reg 32 h out [31:0] $end
+$var reg 32 i out_idx [31:0] $end
+$var reg 67 j outf [66:0] $end
+$var integer 32 k count [31:0] $end
+$scope begin base_case $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 d
+b100001 c
+b100000 b
+b1000 a
+b1 V
+b100000 U
+b100000 T
+b1000 S
+b1 H
+b100000 G
+b100000 F
+b1000 E
+b100000 ;
+b100000 :
+b10 '
+b1000000 &
+b100000 %
+b1000 $
+$end
+#0
+$dumpvars
+b0 k
+bx j
+b0 i
+bx h
+bx g
+xf
+bx e
+bx `
+bx _
+z^
+b0 ]
+bx \
+b0 [
+bx Z
+bx Y
+xX
+bx W
+bx R
+bx Q
+zP
+b0 O
+bx N
+b0 M
+bx L
+bx K
+xJ
+bx I
+bx D
+bx C
+zB
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 9
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 8
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 7
+bx 6
+bx 5
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 4
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3
+bx 2
+bx 1
+bx 0
+bx /
+b0 .
+bx -
+b0 ,
+bx +
+bx *
+x)
+bx (
+b10000111011001010100001100100001 #
+b10011010101111001101111011110000 "
+0!
+$end
+#5000
+b1111111011011100101110101001 3
+b1111111011011100101110101001 1
+b1111111011011100101110101001 D
+b10010001101000101011001111000 4
+b10010001101000101011001111000 /
+b10010001101000101011001111000 C
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ?
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx >
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx =
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx @
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx A
+b1 .
+bx00001111111011011100101110101001 *
+bx00010010001101000101011001111000 (
+b1111111011011100101110101001 #
+b10010001101000101011001111000 "
+1!
+#10000
+0!
+#15000
+b11111110110111001011101010010 `
+b100100011010001010110011110000 _
+b11111110110111001011101010010 5
+b1111111011011100101110101001 2
+b1111111011011100101110101001 R
+b100100011010001010110011110000 6
+b10010001101000101011001111000 0
+b10010001101000101011001111000 Q
+b10 .
+b111111101101110010111010100100001111111011011100101110101001 *
+b1001000110100010101100111100000010010001101000101011001111000 (
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx @
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx A
+1!
+#20000
+0!
+#25000
+b11 .
+1!
+#30000
+0!
+#35000
+b100 .
+1!
+#40000
+0!
+#45000
+b101 .
+1!
+#50000
+0!
+#55000
+b110 .
+1!
+#60000
+0!
+#65000
+b111 .
+1!
+#70000
+0!
+#75000
+b1000 .
+1!
+#80000
+0!
+#85000
+1)
+b1001 .
+1!
+#90000
+0!
+#95000
+b100000 ,
+b1010 .
+1!
+#100000
+0!
+#105000
+b1011 .
+b1000000 ,
+1!
+#110000
+0!
+#115000
+b1100000 ,
+b1100 .
+1!
+#120000
+0!
+#125000
+b1101 .
+b10000000 ,
+1!
+#130000
+0!
+#135000
+b1110 .
+1!
+#140000
+0!
+#145000
+b1111 .
+1!
+#150000
+0!
+#155000
+b10000 .
+1!
+#160000
+0!
+#165000
+b10001 .
+1!
+#170000
+0!
+#175000
+b10010 .
+1!
+#180000
+0!
+#185000
+b10011 .
+1!
+#190000
+0!
+#195000
+b10100 .
+1!
+#200000
+0!
+#205000
+b10101 .
+1!
+#210000
+0!
+#215000
+b10110 .
+1!
+#220000
+0!
+#225000
+b10111 .
+1!
+#230000
+0!
+#235000
+b11000 .
+1!
+#240000
+0!
+#245000
+b11001 .
+1!
+#250000
+0!
+#255000
+b11010 .
+1!
+#260000
+0!
+#265000
+b11011 .
+1!
+#270000
+0!
+#275000
+b11100 .
+1!
+#280000
+0!
+#285000
+b11101 .
+1!
+#290000
+0!
+#295000
+b11110 .
+1!
