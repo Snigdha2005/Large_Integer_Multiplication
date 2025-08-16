@@ -1,6 +1,4 @@
-# SURE Summer Internship Report \- Large Integer Multiplication
-
-- Sasi Snigdha Yadavalli ([YS.Snigdha@iiitb.ac.in](mailto:YS.Snigdha@iiitb.ac.in))
+# Configurable Hardware for Large Integer Multiplication
 
 **Problem Statement**  
 Generic and Configurable Large Integer Multiplication Architecture for FPGA Implementation
